@@ -20,6 +20,19 @@
   height: 32rem;
 }
 
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -30,6 +43,13 @@
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
+  .featurette-heading {
+    font-size: 50px;
+  }
 }
   
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
