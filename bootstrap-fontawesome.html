@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es" class="h-100" data-bs-theme="auto">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.122.0">
+        <title>Inicio</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    
+    <body class="bg-favicon">
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="main.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="img/favicon.png" class="bi" width="70" height="64"  aria-label="JuanMX"></img>
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="main.html" class="nav-link px-2">Inicio</a></li>
+                <li><a href="projects.html" class="nav-link px-2">Mis proyectos</a></li>
+                <li><a href="bootstrap-fontawesome.html" class="nav-link px-2 link-secondary">Bootstrap y Font Awesome</a></li>
+                <li><a href="#" class="nav-link px-2"><i class="fas fa-tools"></i>Laravel AdminLTE</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2"><i class="fas fa-tools"></i>Acceder</button>
+                <button type="button" class="btn btn-primary"><i class="fas fa-tools"></i>Registrarse</button>
+            </div>
+            </header>
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="px-4 py-5 my-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="144" height="114">
+                    <h1 class="display-5 fw-bold text-body-emphasis">Bootstrap</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">Bootstrap es un conjunto de herramientas repleto de funciones para desarrollo frontend. Se pueden usar sus componentes y su sistema de cuadrícula para hacer el frontend de una web en minutos.</p>
+                        <p>Por ejemplo, esta página simple hecha con Bootstrap5.3.3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./img/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bootstrap tiene una sección de ejemplos</h1>
+                    <p class="lead">Con la intención comenzar rápidamente un proyecto. Los ejemplos son del uso de los componentes de Bootstrap y elaborados diseños personalizados.</p>
+                    <p class="lead">Esta página simple fue hecha con esos ejemplos.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a type="button" href="https://getbootstrap.com/docs/5.3/examples/" class="btn btn-primary btn-lg px-4 me-md-2">Ver los ejemplos</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="px-4 py-5 my-5 text-center">
+                    <span class="d-block mx-auto mb-4"><i class="fab fa-font-awesome-flag fa-7x"></i></span>
+                    <h1 class="display-5 fw-bold text-body-emphasis">Font Awesome</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">Font Awesome es un kit de herramientas y colección de iconos <i class="fas fa-icons"></i>. Es muy usado por diseñadores <i class="fas fa-palette"></i> y desarrolladores <i class="fas fa-laptop-code"></i>.</p>
+                        <p class="lead mb-4">En esta página simple <i class="fas fa-laptop"></i> se usan los iconos gratuitos de la versión <i class="fas fa-code-branch"></i> 5.15.4</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a type="button" href="https://fontawesome.com/v5/search?o=r&m=free" class="btn btn-primary btn-lg px-4 gap-3"><span class="pe-2"><i class="fas fa-external-link-alt"></i></span>Ver los iconos de la versión 5</a>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="width: auto;max-width: 680px; padding: 0 15;">
+                <h1 >¿Y como se integran Bootstrap y Font Awesome a un proyecto web?</h1>
+                <p class="lead">Yo lo hago mediante CDN.</p>
+                <p class="lead">De manera <span class="fw-bold">"CONCEPTUAL"</span>, hacerlo por CDN consiste en poner URLs en el HTML: puede ser, una URL en una etiqueta <code>link</code> para "traerte" los estilos y/o puede ser una URL en una etiqueta <code>script</code> para "traerte" la librería.</p>
+                <p class="lead">El CDN también se usa para integrar otras librerías a un proyecto web, por ejemplo <a href="https://datatables.net/">DataTables</a> o <a href="https://sweetalert2.github.io/">sweetalert2</a>.</p>
+                <p class="lead">Para ver un ejemplo de código sobre como integrar el CDN aqui hay uno para los <a href="https://github.com/JuanMX/bootstrap-pagina-simple/blob/master/main.html#L18">estilos de Bootstrap (css)</a> y este es otro para la <a href="https://github.com/JuanMX/bootstrap-pagina-simple/blob/master/main.html#L149">librería de Bootstrap (js)</a>.</p>
+                <p class="lead">Finalmente, la dificultad recae en saber encontrar las URLs en la documentación de la librería deseada. Como se puede ver en el gif animado que está abajo.</p>
+            </div>
+
+            <div class="container text-center">
+                <img src="./img/record_240922_214800.gif" alt="Denoising autencoder" width="95%" class="img-fluid" loading="lazy">
+            </div>
+        </main>
+
+        <div class="container">
+            <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="main.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link px-2 text-body-secondary">Mis proyectos</a></li>
+                <li class="nav-item"><a href="bootstrap-fontawesome.html" class="nav-link px-2 text-body-secondary">Bootstrap y Font Awesome</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="fas fa-tools"></i>Laravel AdminLTE</a></li>
+                
+            </ul>
+            <p class="text-center text-body-secondary">&copy; <span id="currentYear"></span> JuanMX</p>
+            </footer>
+        </div>
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
