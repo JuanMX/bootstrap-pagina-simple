@@ -54,8 +54,8 @@
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2"><i class="fas fa-tools"></i>Acceder</button>
-                <button type="button" class="btn btn-primary"><i class="fas fa-tools"></i>Registrarse</button>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="goSingIn()">Acceder</button>
+                <button type="button" class="btn btn-primary" onclick="goRegister()">Registrarse</button>
             </div>
             </header>
         </div>
@@ -78,7 +78,7 @@
                         <h2>Laravel</h2>
                             <p>Laravel es un framework para hacer aplicaciones web. Se usa con PHP siguiendo la arquitectura <em>Model-View-Controller</em> (MVC). En lo personal la documentación de Laravel es muy buena, es muy detallada y con ejemplos útiles.</p>
                             <p>Si programas en Python, una manera conceptual de ver a Laravel es: Django es a Python como Laravel a PHP.</p>
-                            <p>El framework tiene integeradas algunas soluciones para tareas comunes en el desarrollo de aplicaciones web modernas evitando reinventar la rueda. Por mencionar algunas:</p>
+                            <p>El framework tiene integradas algunas soluciones para tareas comunes en el desarrollo de aplicaciones web modernas evitando reinventar la rueda. Por mencionar algunas:</p>
                             <ul>
                                 <li>Autenticación de usuarios</li>
                                 <li>Laravel Eloquent ORM</li>
@@ -95,31 +95,31 @@
                             <img src="./img/dashboard-mascotas.png" class="container pb-3" alt="Dashboard de mi proyecto llamado 'mascotas'" title="Dashboard de mi proyecto llamado 'mascotas'"></img>
                         <h2>Dashboard en Laravel</h2>
                             <p>Un escenario de como se usaría un dashboard en Laravel es: Usar un controlador para obtener información de una base de datos, generar los reportes requeridos, retornar la información junto con una vista y acomodar los reportes en la vista.</p>
-                            <p>Para la parte visual, Laravel cuenta con un motor de plantillas llamado Blade. Una de sus características es la herencia, que es útil para tener, por ejemplo, una plantilla padre con el <em>header</em> y <em>footer</em> del dashboard además de un <em>body</em> que pueda variar de contenido, para después crear plantillas hijas donde se pone en el cuerpo de la vista la información requerida junto con lo heredado de plantilla padre.</p>
-                            <p>Un ejemplo más específico: Hacer una plantilla padre que tenga <a href="https://getbootstrap.com/">Bootstrap</a> vía CDN y después hacer plantillas hijas con Bootstrap ya heredado. Un dashboard hecho en Bootstrap se ve en la siguiente imagen:</p>
+                            <p>Para la parte visual, Laravel cuenta con un motor de plantillas llamado Blade. Una de sus características es la herencia, que es útil para tener, por ejemplo, una plantilla padre con el <em>header</em> y <em>footer</em> del dashboard además de un cuerpo (<em>body</em>) que pueda variar de contenido, para después crear plantillas hijas donde se pone en el cuerpo de la vista la información requerida junto con lo heredado de la plantilla padre.</p>
+                            <p>Un ejemplo más específico: Hacer una plantilla padre que tenga <a href="https://getbootstrap.com/">Bootstrap</a> vía CDN y después hacer plantillas hijas con Bootstrap integrado mediante la herencia. Un dashboard hecho en Bootstrap se ve en la siguiente imagen:</p>
                             <img src="./img/dashboard-bootstrap.png" class="container pb-3" alt="Ejemplo de un dashboard en Bootstrap" title="Ejemplo de un dashboard en Bootstrap"></img>
                             
                             <p>Laravel permite usar componentes, de manera conceptual, un componente es un conjunto de diferentes tecnologías que permite reusar elementos personalizados. Es buena idea reusar código siempre que sea posible.</p>
-                            <p><a href="https://github.com/jeroennoten/Laravel-AdminLTE">El proyecto Laravel AdminLTE</a> ofrece una manera rápida de usar AdminLTEv3 con Laravel (>=7), lo que permite empezar a desarrollar un dashboard con rapidez. Además cuenta con: una plantilla blade que se puede heredar, un avanzado sistema de configuración y útiles <strong>componentes</strong> estilizados para formularios o tarjetas informativas. Un dashboard hecho con Laravel AdminLTE se muestra en la siguiente imagen:</p>
+                            <p><a href="https://github.com/jeroennoten/Laravel-AdminLTE">El proyecto Laravel AdminLTE</a> ofrece una manera rápida de usar AdminLTEv3 con Laravel (>=7), lo que permite empezar a desarrollar un dashboard con rapidez. Además cuenta con: una plantilla blade que se puede heredar, un avanzado sistema de configuración y útiles <strong>componentes</strong> estilizados para hacer formularios o tarjetas informativas. Un dashboard hecho con Laravel AdminLTE se muestra en la siguiente imagen:</p>
                             <img src="./img/dashboard-adminlte.png" class="container pb-3" alt="Ejemplo de un dashboard en Laravel AdminLTE" title="Ejemplo de un dashboard en Laravel AdminLTE"></img>
 
                             <p>Desde hace pocos años (esta entrada de blog se escribió en 2024) el proyecto Filament ha ganado popularidad y aceptación para realizar dashboards en Laravel.</p>
                         <h2>Filament</h2>
                             <p>De acuerdo con el repositorio en GitHub de <a href="https://github.com/filamentphp/filament">Filament</a>. Su primer lanzamiento (como pre-release) fue en <a href="https://github.com/filamentphp/filament/releases/tag/v0.1.0">Octubre de 2020</a>, su primer <em>release</em> fue en <a href="https://github.com/filamentphp/filament/releases/tag/v1.0.4">Marzo de 2021</a> y el lanzamiento en el que hubieron reacciones en señal de interés fue en <a href="https://github.com/filamentphp/filament/releases/tag/v1.10.0">Junio de 2021</a>.</p>
-                            <p>La documentación menciona que Filament es una colección de componentes full-stack para desarrollar rápidamente en Laravel. Están bellamente diseñados, intuitivos de usar y completamente extensibles. Filament es el perfecto punto de partida para una nueva app de Laravel ¿Por qué gastar tiempo construyendo las mismas características una y otra vez?</p>
+                            <p>La documentación menciona que Filament es una colección de componentes full-stack para desarrollar rápidamente en Laravel. Están bellamente diseñados, intuitivos de usar y completamente extensibles. Filament es el perfecto punto de partida para una nueva app de Laravel. ¿Por qué gastar tiempo construyendo las mismas características una y otra vez?</p>
                             <p>Entre las herramientas que posee están: Un paquete para paneles de administración, para formularios, tablas y notificaciones.</p>
-                            <p>Personalmente Filament me es conocido pero no le he usado. Parece una buena alternativa debido a ser muy usado, hay muchas perosnas que contribuyen a su desarrollo, la <a href="https://filamentphp.com/docs/3.x/panels/getting-started">documentación</a> se ve muy completa (como la de Laravel), <em>parece</em> que se usa Filament tanto en el frontend como en el backend y al ser muy usado deberían haber muchos tutoriales junto con soluciones a problemas específicos. Para mi siguiente proyecto personal usaré Filament.</p>
+                            <p>Personalmente Filament me es conocido pero no lo he usado. Parece una buena alternativa debido a ser muy usado, hay muchas personas que contribuyen a su desarrollo, la <a href="https://filamentphp.com/docs/3.x/panels/getting-started">documentación</a> se ve muy completa (como la de Laravel), <em>parece</em> que se usa Filament tanto en el frontend como en el backend y al ser muy usado deberían haber muchos tutoriales junto con soluciones a problemas específicos. Para mi siguiente proyecto personal usaré Filament.</p>
                             <p>Un ejemplo de como se ve un dashboard en Filament se ve en el siguiente <a href="https://demo.filamentphp.com/">enlace</a> y en la siguiente imagen:</p>
                             <img src="./img/dashboard-filament.png" class="container pb-3" alt="Ejemplo de un dashboard en Filament" title="Ejemplo de un dashboard en Filament"></img>
 
                         <h2>La opinión intrascendente</h2>
                             <p>Me gusta mucho programar, es algo que quiero hacer toda mi vida, también es algo para lo que estudié y claramente quiero trabajar y ganar dinero programando.</p>
-                            <p>En entrevistas de trabajo, por razones que escapan de mi comprensión, los reclutadores hacen preguntas sin mucho sentido o quizá no se plantea bien la pregunta, esperan una respuesta de "si" o "no" y si respondes otra cosa te descartan para la vacante.</p>
-                            <p>Preguntan cosas como <em>¿Tienes experiencia de diez años o más haciendo dashboards en Filament?</em>, <em>¿Tienes tres años o más usando Laravel11?</em>. Se le recuerda al lector que esta entrada de blog se escribió en 2024.</p>
-                            <p>Para estas preguntas se pueden hacer observaciones. Por ejemplo, para la primera, no es posible tener tantos años de experiencia en Filament debido a su lanzamiento en el año 2020, además que los dashboard no son propios de una tecnología. Para la segunda, Laravel11 se lanzó en <a href="https://github.com/laravel/framework/releases/tag/v11.0.0">Marzo de 2024</a> no es posible tener tres años de experiencia para esa versión en expecífica .<br>Es cierto que se le puede contestar lo anterior a los reclutadores, pero, como dije antes, esperan una respuesta de "si" o "no".</p>
-                            <p>En mi opinión se pueden abordar mejor  estos temas preguntando: <em>¿Haz hecho dashboards? ¿Con qué?, ¿Que funcionalidades hiciste?, ¿Conoces Filament? ¿A que nivel?, ¿Estarías dispuesto a hacer un examen de lógica de programación?</em></p>
-                            <p>Con las preguntas anteriores se puede estimar la <em>destreza</em> en programación. Si tiene buena lógica en programación y le es familiar los requisitos de la vacante entonces no le será imposible adaptarse a nuevas tecnologías y realizar el trabajo asignado por la empresa. A la fecha, para mi es muy raro que un candidato cubra exactamente al 100% los requisitos de una vacante.</p>
-                            <p>Pero como usted, internauta, leyó al inicio: <strong>Es una opinión intrascendente</strong>.</p>
+                            <p>En entrevistas de trabajo, por razones que escapan de mi comprensión, los reclutadores hacen preguntas sin mucho sentido o quizá no plantean bien la pregunta, esperan una respuesta de "si" o "no" y si respondes otra cosa te descartan para la vacante.</p>
+                            <p>Preguntan cosas como: <em>¿Tienes experiencia de diez años o más haciendo dashboards en Filament?</em>, <em>¿Tienes tres años o más usando Laravel11?</em>. Se le recuerda al lector que esta entrada de blog se escribió en 2024.</p>
+                            <p>Para estas preguntas se pueden hacer observaciones. Por ejemplo, para la primera, no es posible tener tantos años de experiencia en Filament debido a su lanzamiento en el año 2020, además que los dashboard no son propios de una tecnología. Para la segunda, Laravel11 se lanzó en <a href="https://github.com/laravel/framework/releases/tag/v11.0.0">Marzo de 2024</a> y no es posible tener tres años de experiencia para esa versión en específica.<br>Es cierto que se le puede mencionar lo anterior a los reclutadores, pero, como dije antes, esperan una respuesta de "si" o "no".</p>
+                            <p>En mi opinión se puede manejar de mejor manera la entrevista de trabajo preguntando: <em>¿Haz hecho dashboards? ¿Con qué?, ¿Que funcionalidades hiciste?, ¿Conoces Filament? ¿A que nivel?, ¿Estarías dispuesto a hacer un examen de lógica de programación?</em></p>
+                            <p>Con las preguntas anteriores se puede estimar la <em>destreza</em> del candidato en programación. Además si tiene buena lógica en programación y le es familiar los requisitos de la vacante entonces no le será imposible adaptarse a nuevas tecnologías y realizar el trabajo asignado por la empresa. A la fecha, para mi es muy raro que un candidato cubra exactamente al 100% los requisitos de una vacante.</p>
+                            <p>Pero como usted, estimado internauta, leyó al inicio, es una opinión intrascendente.</p>
                     </article>
 
                 </div>
@@ -187,4 +187,10 @@
 <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 <script>
     document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    function goRegister(){
+      window.location.href = "register.html";
+    }
+    function goSingIn(){
+        window.location.href = "sign-in.html";
+    }
 </script>

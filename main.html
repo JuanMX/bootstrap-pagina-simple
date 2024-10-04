@@ -36,8 +36,8 @@
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2"><i class="fas fa-tools"></i>Acceder</button>
-                <button type="button" class="btn btn-primary"><i class="fas fa-tools"></i>Registrarse</button>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="goSingIn()">Acceder</button>
+                <button type="button" class="btn btn-primary" onclick="goRegister()">Registrarse</button>
             </div>
             </header>
         </div>
@@ -150,4 +150,10 @@
 <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 <script>
     document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    function goRegister(){
+        window.location.href = "register.html";
+    }
+    function goSingIn(){
+        window.location.href = "sign-in.html";
+    }
 </script>
